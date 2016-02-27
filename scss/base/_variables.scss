@@ -9,6 +9,9 @@ $dark-teal:     #0BA99D;
 $green-lightening  : #8FEF30;
 $light-orange      : #FF9D26;
 $dark-orange  : #FF7D15;
+$bright-orange  : #FF5500;
+$dark-red  : #8B1722;
+$med-red  : #C21A23;
 $light-grey    : lighten($dark-grey, 35%);
 
 // Functional color variables
@@ -19,25 +22,23 @@ $color-tert     : $teal;
 $color-quart     : $light-orange;
 $color-quin     : $grey;
 
-$color-border-light :
-$color-border-dark  :
-$color-link-default :
-$color-link-visited :
+$color-border-light : $bright-orange;
+$color-border-dark  :  $dark-red;
+$color-link-default : $grey;
+$color-link-visited : #FF7D15;
 
 $color-shadow       : rgba($black,.8);
-$color-text-body     :
-$color-img-body         :
-$color-button-gradient    :
+// $color-text-body     :
+// $color-img-body         :
+// $color-button-gradient    :
 
-Font stacks
+ // Font stacks
 
-$stack-audimat :                 //////Audimat3000-Regulier, sans-serif;//////////
-$stack-helvetica  :              //////"Helvetica Neue", $stack-sans-serif;
-$stack-abolition  :              //////'Abolition Regular', $stack-sans-serif;
+  $primary-font    : Arial, sans-serif;
 
-Border radius
+// Border radius
 
-$br: 10px;
+// $br: 10px;
 
 // Asset paths
 

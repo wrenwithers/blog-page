@@ -2,13 +2,14 @@ footer {
   @include span-columns(12);
   position: absolute;
   z-index: 3;
-  margin: 260vh auto 0 auto;
+  margin: 208vh auto 0 auto;
   color: $dark-grey;
-  background: -webkit-linear-gradient($color-button-gradient);
-  background: -moz-linear-gradient($color-button-gradient);
-  background: -o-linear-gradient($color-button-gradient);
-  background: -ms-linear-gradient($color-button-gradient);
-  background: linear-gradient($color-button-gradient);
+  border: thin solid #000;
+  // background: -webkit-linear-gradient($color-button-gradient);
+  // background: -moz-linear-gradient($color-button-gradient);
+  // background: -o-linear-gradient($color-button-gradient);
+  // background: -ms-linear-gradient($color-button-gradient);
+  // background: linear-gradient($color-button-gradient);
 }
 
 footer ul {
@@ -16,16 +17,17 @@ footer ul {
   height: 10vh;
   width: 100vw;
   list-style-type: none;
+  margin: 0 0 0 37vw;
   padding: 4vh 3vw 0 3vw;
-  background: -webkit-linear-gradient($color-button-gradient);
-  background: -moz-linear-gradient($color-button-gradient);
-  background: -o-linear-gradient($color-button-gradient);
-  background: -ms-linear-gradient($color-button-gradient);
-  background: linear-gradient($color-button-gradient);
+  // background: -webkit-linear-gradient($color-button-gradient);
+  // background: -moz-linear-gradient($color-button-gradient);
+  // background: -o-linear-gradient($color-button-gradient);
+  // background: -ms-linear-gradient($color-button-gradient);
+  // background: linear-gradient($color-button-gradient);
    li {
      display: inline;
-     padding: 0 6vw;
-     font-family: $stack-audimat;
+     padding: 0 2vw;
+     font-family: $primary-font;
      font-size: 1em;
      color: $dark-grey;
 }

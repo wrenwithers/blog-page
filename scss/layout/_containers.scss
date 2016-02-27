@@ -8,90 +8,111 @@ html {
 #top-half {
   @include span-columns(12);
       .ri img{
-        position: absolute;
+        position: relative;
         left: 0px;
         top: 0px;
-        width: 98vw;
-        height: auto;
+        width: 30vw;
+        height: 45vh;
+        margin: 25vh 0 0 34vw;
         z-index: 0;
-  }
+        border: thick solid $color-border-light;
+      }
+      .ri h1 {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        margin: 0 0 0 42vw;
+        font-family: "anu";
+      }
 }
 
-//Bottom half landing page
+//Lower half landing page, middle section
 
-#mid-quarter {
+#mid-section {
     @include span-columns(12);
     position: relative;
-    margin: 85vh 0vh -6vh 0vh;
+    margin: 0 0 8vh 0;
     background-color: $white;
     height: 50vh;
     width: 100%;
     z-index: 0;
   }
 
-  #info {
-      @include span-columns(12);
+  #mid-left {
+      @include span-columns(6);
       position: absolute;
-      z-index: 1;
-      height: 8vh;
-      width: 100%;
-      text-align: center;
-      font-size: 1.5em;
-      font-family: $stack-audimat;
-      color: $dark-grey;
-    }
+      margin: 2vh 50vw 0 0;
+      padding: 5vw;
+          h4{
+            position: absolute;
+            display: block;
+            width: 20vw;
+            font-family: $primary-font;
+            color: $dark-grey;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: $primary-font;
+          }
+      }
+
+
+  #m-l-comments {
+      position: absolute;
+      margin: 50vh 0 0 20vw;
+  }
 
   #mid-right {
       @include span-columns(6);
       position: absolute;
-          h4{
-            font-family: $stack-audimat;
-            color: $dark-grey;
-            font-size: 1.5em;
-            text-align: center;
-            margin: 30vh auto;
-            padding: 0 5em;
-          }
-  }
-
-  #mid-left {
-      @include span-columns(6);
-      position: absolute;
          img  {
             position: absolute;
-            margin: 15vh 0 0 50vw;
+            margin: 15vh 0 0 54vw;
+            border: thick solid $color-border-light;
          }
-  }
+      }
 
+//Lower half landing page, bottom-section
 
-#bottom-quarter {
+#bottom-section {
       @include span-columns(12);
       position: relative;
-      margin: 35vh 0vh -6vh 0vh;
+      margin: 0vh 0vh -6vh 0vh;
       background-color: $white;
       height: 50vh;
       width: 100%;
       z-index: 0;
-  }
+     }
 
-  #bottom-right {
+#bottom-left {
       @include span-columns(6);
       position: absolute;
+      margin: 6vh 0vw 4vh 0vw;
+      padding: 2vw;
         img  {
          position: absolute;
-         margin-left: 3vw;
-    }
-  }
-
-  #bottom-left {
-      @include span-columns(6);
-      position: absolute;
-      margin: 5vw 0 0 45vw;
-      padding: 5vw;
-        h4{
-          font-family: $stack-audimat;
-          color: $dark-grey;
-          font-size: 1.5em;
-          text-align: center;
+         margin: 10vh 0 0 0;
+         border: thick solid $color-border-light;
         }
       }
+
+#bottom-right {
+    @include span-columns(6);
+    position: absolute;
+    margin: 6vh 0vw 0 52vw;
+    padding: 5vw;
+      h4{
+        position: absolute;
+        display: block;
+        width: 20vw;
+        font-family: $primary-font;
+        color: $dark-grey;
+        font-size: 1.5em;
+        text-align: center;
+        font-family: $primary-font;
+      }
+    }
+
+#b-r-comments {
+  position: absolute;
+  margin: 54vh 0vw 0 73vw;
+}
