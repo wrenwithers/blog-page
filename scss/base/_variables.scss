@@ -12,7 +12,7 @@ $dark-orange  : #FF7D15;
 $bright-orange  : #FF5500;
 $dark-red  : #8B1722;
 $med-red  : #C21A23;
-$light-grey    : lighten($dark-grey, 35%);
+$light-grey    : lighten($dark-grey, 45%);
 
 // Functional color variables
 
@@ -26,7 +26,7 @@ $color-border-light : $bright-orange;
 $color-border-dark  :  $dark-red;
 $color-link-default : $grey;
 $color-link-visited : #FF7D15;
-
+$color-button-gradient: $dark-red, $med-red, $dark-red;
 $color-shadow       : rgba($black,.8);
 // $color-text-body     :
 // $color-img-body         :
@@ -48,4 +48,4 @@ $path-font     : '../fonts';
 // Media query breakpoints
 
 $brk-narrow  : '(max-width: 768px)';
-$brk-wide    : '(max-width: 1024px)';
+$brk-wide    : '(max-width: 1120px)';

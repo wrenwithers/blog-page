@@ -8,7 +8,7 @@ html {
 
 html {
   width: 100%;
-  background: #fff; }
+  background: #c4c4c4; }
 
 #top-half {
   float: left;
@@ -17,21 +17,23 @@ html {
   width: 100%; }
   #top-half:last-child {
     margin-right: 0; }
-  #top-half .ri img {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 30vw;
-    height: 45vh;
-    margin: 25vh 0 0 34vw;
-    z-index: 0;
-    border: thick solid #FF5500; }
-  #top-half .ri h1 {
-    position: absolute;
-    display: block;
-    z-index: 1;
-    margin: 0 0 0 42vw;
-    font-family: "anu"; }
+
+.main-img {
+  position: relative;
+  z-index: 0;
+  left: 0px;
+  top: 0px;
+  margin: 20vh 0 0 25vw;
+  max-width: 60%;
+  height: auto; }
+
+h1 {
+  position: absolute;
+  display: block;
+  z-index: 4;
+  margin: 0vh 0 50vh 42vw;
+  font-family: "anu";
+  color: #515151; }
 
 #mid-section {
   float: left;
@@ -40,7 +42,7 @@ html {
   width: 100%;
   position: relative;
   margin: 0 0 8vh 0;
-  background-color: #fff;
+  background-color: #c4c4c4;
   height: 50vh;
   width: 100%;
   z-index: 0; }
@@ -57,6 +59,17 @@ html {
   padding: 5vw; }
   #mid-left:last-child {
     margin-right: 0; }
+  @media only screen and (max-width: 1120px) {
+    #mid-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 40vh;
+      width: 100%;
+      margin: 5vh; }
+      #mid-left:last-child {
+        margin-right: 0; } }
   #mid-left h4 {
     position: absolute;
     display: block;
@@ -70,6 +83,15 @@ html {
 #m-l-comments {
   position: absolute;
   margin: 50vh 0 0 20vw; }
+  @media only screen and (max-width: 1120px) {
+    #m-l-comments {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin: 40vh 0 0 45vw; }
+      #m-l-comments:last-child {
+        margin-right: 0; } }
 
 #mid-right {
   float: left;
@@ -79,10 +101,33 @@ html {
   position: absolute; }
   #mid-right:last-child {
     margin-right: 0; }
+  @media only screen and (max-width: 1120px) {
+    #mid-right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 40vh;
+      width: 100%;
+      margin-top: 2vh; }
+      #mid-right:last-child {
+        margin-right: 0; } }
   #mid-right img {
     position: absolute;
-    margin: 15vh 0 0 54vw;
-    border: thick solid #FF5500; }
+    width: 30vw;
+    height: 30vh;
+    margin: 15vh 0 0 64vw;
+    box-shadow: 0px 10px 10px 5px #888888;
+    border-radius: 5px; }
+    @media only screen and (max-width: 1120px) {
+      #mid-right img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        display: none; }
+        #mid-right img:last-child {
+          margin-right: 0; } }
 
 #bottom-section {
   float: left;
@@ -91,7 +136,7 @@ html {
   width: 100%;
   position: relative;
   margin: 0vh 0vh -6vh 0vh;
-  background-color: #fff;
+  background-color: #c4c4c4;
   height: 50vh;
   width: 100%;
   z-index: 0; }
@@ -108,10 +153,33 @@ html {
   padding: 2vw; }
   #bottom-left:last-child {
     margin-right: 0; }
+  @media only screen and (max-width: 1120px) {
+    #bottom-left {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 50vh;
+      width: 100%;
+      margin: 40vh 0vw 4vh 0vw; }
+      #bottom-left:last-child {
+        margin-right: 0; } }
   #bottom-left img {
     position: absolute;
-    margin: 10vh 0 0 0;
-    border: thick solid #FF5500; }
+    margin: 5vh 0vw 0 5vw;
+    height: 30vh;
+    width: 30vw;
+    box-shadow: 0px 10px 10px 5px #888888;
+    border-radius: 5px; }
+    @media only screen and (max-width: 1120px) {
+      #bottom-left img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        display: none; }
+        #bottom-left img:last-child {
+          margin-right: 0; } }
 
 #bottom-right {
   float: left;
@@ -123,6 +191,17 @@ html {
   padding: 5vw; }
   #bottom-right:last-child {
     margin-right: 0; }
+  @media only screen and (max-width: 1120px) {
+    #bottom-right {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      height: 50vh;
+      width: 100%;
+      margin: 0vh 0vw 0 5vw; }
+      #bottom-right:last-child {
+        margin-right: 0; } }
   #bottom-right h4 {
     position: absolute;
     display: block;
@@ -136,6 +215,9 @@ html {
 #b-r-comments {
   position: absolute;
   margin: 54vh 0vw 0 73vw; }
+  @media only screen and (max-width: 1120px) {
+    #b-r-comments {
+      margin: 40vh 0 0 45vw; } }
 
 footer {
   float: left;
@@ -144,9 +226,16 @@ footer {
   width: 100%;
   position: absolute;
   z-index: 3;
+  height: 10vh;
+  width: 100vw;
   margin: 208vh auto 0 auto;
   color: #515151;
-  border: thin solid #000; }
+  background-color: #C21A23;
+  background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -moz-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -o-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -ms-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: linear-gradient(#8B1722, #C21A23, #8B1722); }
   footer:last-child {
     margin-right: 0; }
 
@@ -156,43 +245,69 @@ footer ul {
   width: 100vw;
   list-style-type: none;
   margin: 0 0 0 37vw;
-  padding: 4vh 3vw 0 3vw; }
+  padding: 4vh 3vw 0 3vw;
+  background-color: #C21A23;
+  background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -moz-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -o-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -ms-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: linear-gradient(#8B1722, #C21A23, #8B1722); }
   footer ul li {
     display: inline;
     padding: 0 2vw;
     font-family: Arial, sans-serif;
     font-size: 1em;
-    color: #515151; }
+    color: #515151;
+    background-color: #C21A23; }
 
 a:link {
   color: #515151;
   text-decoration: none; }
 
 a:hover {
-  color: #aaaaaa;
+  color: #c4c4c4;
   text-decoration: none; }
 
 .header {
   position: absolute;
-  z-index: 2;
-  margin: 1vh 0vw 0vh 2vw;
-  text-align: left;
-  font-family: "aaargh" arial, sans-serif;
-  font-size: 2.5em;
-  color: #515151; }
-
-.nav ul {
-  position: absolute;
   z-index: 1;
-  display: inline;
-  width: 98vw;
-  height: 4vh;
+  width: 25vw;
+  text-align: center;
+  height: 10vh;
+  width: 30vw;
+  margin: 0 0 0 2vh;
+  padding: 1.5vh 0 0 .25vw;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  color: #515151;
+  background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -moz-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -o-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: -ms-linear-gradient(#8B1722, #C21A23, #8B1722);
+  background: linear-gradient(#8B1722, #C21A23, #8B1722); }
+  @media only screen and (max-width: 1120px) {
+    .header {
+      width: 50vw;
+      margin: 0 0 0 24vw; } }
+
+#nav ul {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 10vh;
+  margin: 5vh 0 .5vw 60vw;
+  padding: .5vh;
   list-style-type: none; }
-  .nav ul li {
-    float: right;
-    padding: 1em 2em 0em 2em;
+  @media only screen and (max-width: 1120px) {
+    #nav ul {
+      margin: 15vh 35vw 0 29vw; } }
+  #nav ul li {
+    text-align: right;
+    display: inline;
+    padding-right: 3vw;
+    z-index: 3;
     font-family: Arial, sans-serif;
-    font-size: 2.5em;
     font-size: 1em;
     color: #515151; }
 
@@ -201,7 +316,7 @@ a:link {
   text-decoration: none; }
 
 a:hover {
-  color: #aaaaaa;
+  color: #c4c4c4;
   text-decoration: none; }
 
 a .button1 {
@@ -227,12 +342,12 @@ a .button1:hover {
 
 @font-face {
   font-family: "anu";
-  src: url("../fonts/anu.eot");
-  src: url("../fonts/anu.eot?#iefix") format("embedded-opentype"), url("../fonts/anu.woff") format("woff"), url("../fonts/anu.otf") format("ttf"); }
+  src: url("components/../fonts/anu.eot");
+  src: url("components/../fonts/anu.eot?#iefix") format("embedded-opentype"), url("components/../fonts/anu.woff") format("woff"), url("components/../fonts/anu.otf") format("ttf"); }
 @font-face {
   font-family: "aaargh";
-  src: url("../fonts/aaargh.eot");
-  src: url("../fonts/aaargh.eot?#iefix") format("embedded-opentype"), url("../fonts/aaargh.woff") format("woff"), url("../fonts/aaargh.otf") format("ttf"); }
+  src: url("components/../fonts/aaargh.eot");
+  src: url("components/../fonts/aaargh.eot?#iefix") format("embedded-opentype"), url("components/../fonts/aaargh.woff") format("woff"), url("components/../fonts/aaargh.otf") format("ttf"); }
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
