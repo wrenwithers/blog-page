@@ -1,0 +1,7 @@
+/*  CSS snippet for importing web font formats  */
+
+    src: url('../fonts/anu-webfont.eot');
+    src: url('anu-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('anu-webfont-webfont.woff') format('woff'),
+         url('anu-webfont-webfont.ttf') format('truetype'),
+         url('anu-webfont-webfont.svg#anudawregular') format('svg');

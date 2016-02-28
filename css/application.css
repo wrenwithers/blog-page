@@ -6,6 +6,32 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: .75em;
+  line-height: 1.5;
+  color: #515151;
+  margin: 0;
+  font-family: "anu", anu, Arial, sans-serif; }
+
+h1 {
+  font-family: "anu", anu, Arial, sans-serif; }
+
+h4 {
+  font-size: 1.75em;
+  line-height: 1.2;
+  color: #515151;
+  font-size: 1.75em;
+  color: #515151;
+  line-height: 1.2; }
+
+img {
+  max-width: 100%; }
+
+/* Pseudo-classes ------------------ */
 html {
   width: 100%;
   background: #c4c4c4; }
@@ -31,9 +57,7 @@ h1 {
   position: absolute;
   display: block;
   z-index: 4;
-  margin: 0vh 0 50vh 42vw;
-  font-family: "anu";
-  color: #515151; }
+  margin: 0vh 0 50vh 42vw; }
 
 #mid-section {
   float: left;
@@ -73,12 +97,7 @@ h1 {
   #mid-left h4 {
     position: absolute;
     display: block;
-    width: 20vw;
-    font-family: Arial, sans-serif;
-    color: #515151;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: Arial, sans-serif; }
+    width: 20vw; }
 
 #m-l-comments {
   position: absolute;
@@ -205,12 +224,7 @@ h1 {
   #bottom-right h4 {
     position: absolute;
     display: block;
-    width: 20vw;
-    font-family: Arial, sans-serif;
-    color: #515151;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: Arial, sans-serif; }
+    width: 20vw; }
 
 #b-r-comments {
   position: absolute;
@@ -255,7 +269,6 @@ footer ul {
   footer ul li {
     display: inline;
     padding: 0 2vw;
-    font-family: Arial, sans-serif;
     font-size: 1em;
     color: #515151;
     background-color: #C21A23; }
@@ -278,7 +291,6 @@ a:hover {
   margin: 0 0 0 2vh;
   padding: 1.5vh 0 0 .25vw;
   border-radius: 10px;
-  font-family: Arial, sans-serif;
   font-size: 2.5em;
   color: #515151;
   background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
@@ -307,7 +319,6 @@ a:hover {
     display: inline;
     padding-right: 3vw;
     z-index: 3;
-    font-family: Arial, sans-serif;
     font-size: 1em;
     color: #515151; }
 
@@ -319,35 +330,18 @@ a:hover {
   color: #c4c4c4;
   text-decoration: none; }
 
-a .button1 {
-  position: absolute;
-  z-index: 1;
-  display: block;
-  height: 2.5em;
-  width: 7em;
-  background: #05CFBE;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
-  font-size: 2.5em;
-  color: #515151;
-  font-size: 22px;
-  text-align: center;
-  margin-top: 70vh;
-  margin-left: 45vw;
-  padding: .65em; }
+.centered, #mid-left h4, #bottom-right h4 {
+  text-align: center; }
 
-a .button1:hover {
-  color: #8D8E8E;
-  border: thin solid #8D8E8E; }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 @font-face {
   font-family: "anu";
-  src: url("components/../fonts/anu.eot");
-  src: url("components/../fonts/anu.eot?#iefix") format("embedded-opentype"), url("components/../fonts/anu.woff") format("woff"), url("components/../fonts/anu.otf") format("ttf"); }
-@font-face {
-  font-family: "aaargh";
-  src: url("components/../fonts/aaargh.eot");
-  src: url("components/../fonts/aaargh.eot?#iefix") format("embedded-opentype"), url("components/../fonts/aaargh.woff") format("woff"), url("components/../fonts/aaargh.otf") format("ttf"); }
+  src: url("../fonts/anu-webfont.eot");
+  src: url("../fonts/anu-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/anu-webfont.woff") format("woff"), url("../fonts/anu-webfont.ttf") format("truetype"); }
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

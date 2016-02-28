@@ -25,20 +25,16 @@ $color-quin     : $grey;
 $color-border-light : $bright-orange;
 $color-border-dark  :  $dark-red;
 $color-link-default : $grey;
-$color-link-visited : #FF7D15;
+$color-link-visited : $dark-orange;
 $color-button-gradient: $dark-red, $med-red, $dark-red;
 $color-shadow       : rgba($black,.8);
-// $color-text-body     :
-// $color-img-body         :
-// $color-button-gradient    :
 
  // Font stacks
 
-  $primary-font    : Arial, sans-serif;
+$stack-sans-serif  : anu, Arial, sans-serif;
+$stack-anu  : "anu", $stack-sans-serif;
+// $stack-abolition  : 'Abolition Regular', $stack-sans-serif;
 
-// Border radius
-
-// $br: 10px;
 
 // Asset paths
 
@@ -48,4 +44,4 @@ $path-font     : '../fonts';
 // Media query breakpoints
 
 $brk-narrow  : '(max-width: 768px)';
-$brk-wide    : '(max-width: 1120px)';
+$brk-wide    : '(max-width: 11px)';

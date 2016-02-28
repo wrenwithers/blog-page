@@ -22,8 +22,6 @@ html {
       display: block;
       z-index: 4;
       margin: 0vh 0 50vh 42vw;
-      font-family: "anu";
-      color: $dark-grey;
     }
 
 
@@ -51,14 +49,11 @@ html {
         margin: 5vh;
       }
           h4{
+            @extend .centered;
             position: absolute;
             display: block;
             width: 20vw;
-            font-family: $primary-font;
-            color: $dark-grey;
-            font-size: 1.5em;
-            text-align: center;
-            font-family: $primary-font;
+
           }
       }
 
@@ -113,11 +108,11 @@ html {
       position: absolute;
       margin: 6vh 0vw 4vh 0vw;
       padding: 2vw;
-      @media only screen and (max-width:1120px) {
-      @include span-columns(12);
-      height: 50vh;
-      width: 100%;
-      margin: 40vh 0vw 4vh 0vw;
+          @media only screen and (max-width:1120px) {
+          @include span-columns(12);
+          height: 50vh;
+          width: 100%;
+          margin: 40vh 0vw 4vh 0vw;
     }
         img  {
            position: absolute;
@@ -145,14 +140,10 @@ html {
         margin: 0vh 0vw 0 5vw;
   }
       h4{
+        @extend .centered;
         position: absolute;
         display: block;
         width: 20vw;
-        font-family: $primary-font;
-        color: $dark-grey;
-        font-size: 1.5em;
-        text-align: center;
-        font-family: $primary-font;
         }
 
   }

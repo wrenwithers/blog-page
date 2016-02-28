@@ -1,0 +1,31 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: .75em;
+  line-height: 1.5;
+  color: $dark-grey;
+  margin: 0;
+  font-family: $stack-anu;
+}
+
+h1 {
+  font-family: $stack-anu;
+}
+
+
+h4 {
+  @include text(1.75em, 1.2, $color: $dark-grey);
+  font-size: 1.75em;
+  color: $dark-grey;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Pseudo-classes ------------------ */
