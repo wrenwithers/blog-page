@@ -5,24 +5,36 @@ html {
 
 //Top half landing page
 
-#top-half {
-  @include span-columns(12);
-}
-    .main-img {
-      position: relative;;
-      z-index: 0;
-      left: 0px;
-      top: 0px;
-      margin: 20vh 0 0 25vw;
-      max-width:60%;
+
+    // .main-img {
+    //   position: relative;
+    //   margin: 20vh 0 0 30vw;
+    //   @media only screen and (max-width:1120px) {
+    //     margin: 20vh 20vw;
+    // }
+    #top-half {
+      @include span-columns(12);
+    }
+
+    #main-image img {
+      position: relative;
+      float: left;
+      top: 0;
+      left:0;
       height: auto;
+      margin: 20vh 0 0 30vw;
+      @media only screen and (max-width:1120px) {
+        margin: 20vh 20vw;
     }
-      h1 {
+  }
+      #main-image h1 {
       position: absolute;
-      display: block;
-      z-index: 4;
-      margin: 0vh 0 50vh 42vw;
+      left: 40vw;
+      top: 60vh;
+      font-family: $stack-anu;
+      color: #8B1722;
     }
+
 
 
 //Lower half landing page, middle section
@@ -60,10 +72,10 @@ html {
 
   #m-l-comments {
       position: absolute;
-      margin: 50vh 0 0 20vw;
+      margin: 56vh 0 0 20vw;
             @media only screen and (max-width:1120px) {
             @include span-columns(12);
-            margin: 40vh 0 0 45vw;
+            margin: 52vh 0 0 45vw;
       }
   }
 
@@ -150,8 +162,8 @@ html {
 
 #b-r-comments {
   position: absolute;
-  margin: 54vh 0vw 0 73vw;
+  margin: 60vh 0vw 0 73vw;
   @media only screen and (max-width:1120px) {
-    margin: 40vh 0 0 45vw;
+    margin: 50vh 0 0 45vw;
   }
 }

@@ -17,8 +17,8 @@ body {
   margin: 0;
   font-family: "anu", anu, Arial, sans-serif; }
 
-h1 {
-  font-family: "anu", anu, Arial, sans-serif; }
+img {
+  max-width: 100%; }
 
 h4 {
   font-size: 1.75em;
@@ -27,9 +27,6 @@ h4 {
   font-size: 1.75em;
   color: #515151;
   line-height: 1.2; }
-
-img {
-  max-width: 100%; }
 
 /* Pseudo-classes ------------------ */
 html {
@@ -44,20 +41,23 @@ html {
   #top-half:last-child {
     margin-right: 0; }
 
-.main-img {
+#main-image img {
   position: relative;
-  z-index: 0;
-  left: 0px;
-  top: 0px;
-  margin: 20vh 0 0 25vw;
-  max-width: 60%;
-  height: auto; }
+  float: left;
+  top: 0;
+  left: 0;
+  height: auto;
+  margin: 20vh 0 0 30vw; }
+  @media only screen and (max-width: 1120px) {
+    #main-image img {
+      margin: 20vh 20vw; } }
 
-h1 {
+#main-image h1 {
   position: absolute;
-  display: block;
-  z-index: 4;
-  margin: 0vh 0 50vh 42vw; }
+  left: 40vw;
+  top: 60vh;
+  font-family: "anu", anu, Arial, sans-serif;
+  color: #8B1722; }
 
 #mid-section {
   float: left;
@@ -101,14 +101,14 @@ h1 {
 
 #m-l-comments {
   position: absolute;
-  margin: 50vh 0 0 20vw; }
+  margin: 56vh 0 0 20vw; }
   @media only screen and (max-width: 1120px) {
     #m-l-comments {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin: 40vh 0 0 45vw; }
+      margin: 52vh 0 0 45vw; }
       #m-l-comments:last-child {
         margin-right: 0; } }
 
@@ -228,10 +228,10 @@ h1 {
 
 #b-r-comments {
   position: absolute;
-  margin: 54vh 0vw 0 73vw; }
+  margin: 60vh 0vw 0 73vw; }
   @media only screen and (max-width: 1120px) {
     #b-r-comments {
-      margin: 40vh 0 0 45vw; } }
+      margin: 50vh 0 0 45vw; } }
 
 footer {
   float: left;
@@ -242,7 +242,7 @@ footer {
   z-index: 3;
   height: 10vh;
   width: 100vw;
-  margin: 208vh auto 0 auto;
+  margin: 240vh auto 0 auto;
   color: #515151;
   background-color: #C21A23;
   background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
@@ -291,7 +291,7 @@ a:hover {
   margin: 0 0 0 2vh;
   padding: 1.5vh 0 0 .25vw;
   border-radius: 10px;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #515151;
   background: -webkit-linear-gradient(#8B1722, #C21A23, #8B1722);
   background: -moz-linear-gradient(#8B1722, #C21A23, #8B1722);
@@ -313,7 +313,7 @@ a:hover {
   list-style-type: none; }
   @media only screen and (max-width: 1120px) {
     #nav ul {
-      margin: 15vh 35vw 0 29vw; } }
+      margin: 15vh 0 0 22.5vw; } }
   #nav ul li {
     text-align: right;
     display: inline;
